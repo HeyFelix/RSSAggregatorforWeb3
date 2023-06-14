@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        function message(age) {
+            let Msg = ''
+            switch (true) {
+                case age < 18: Msg = 'you are too young'; break;
+                case (age >= 18 && age < 50): Msg = 'you are old enough'; break;
+                case age >= 50: Msg = 'you are too old'; break;
+            }
+            return (Msg);
+        }
+        console.log(message(19))
+    </script>
+
+    <script>
+        for (i = 0; i < 10; i++) {
+            document.write(i + '<br>')
+        }
+    </script> -->
+
+    <!-- <script>
+
+        let num = 5;
+        do {
+            console.log(num)
+        }
+        while (num - 2 >= 0) {
+            console.log(num)
+        }
+
+    </script> -->
+    <!-- <script>
+        function rowSum(Row = 5) {
+            for (let line = 1; line < Row; line++) {
+                for (let star = Row - line; star > 0; star--) {
+                    document.write('^');
+                    console.log(star)
+                }
+                for (let n = 2 * line - 1; n > 0; n--) {
+                    document.write('*');
+                    // console.log(n)
+                }
+                document.write('<br>');
+
+            }
+        }
+        rowSum(10)
+    </script> -->
+    <!-- <script>
+        outer: for (let i = 1; i < 10; i++) {
+            for (let j = 1; j < 10; j++) {
+                if (j % 2 == 0) { console.log(i, j) }
+
+                if (i + j > 8) { break outer; }
+            }
+        }
+    </script> -->
+
+    <!-- <script>
+        let Lesson = [
+            { title: 'part 1:JavsScript intro', Lesson: 1 },
+            { title: 'part 2:JavsScript intro', Lesson: 2 },
+            { title: 'part 3:JavsScript intro', Lesson: 3 }
+        ];
+        document.write(`<table border="1" width="100%"><thead><tr><th>Title</th><th>Lesson</th></tr></thead>`);
+        for (let infor of Lesson) {
+            // console.log(lessonName)
+            document.write(`<tr><td>${infor.title} </td><td> ${infor.Lesson} </td></tr>`);
+        }
+    </script>
+    <script>
+        let j = 'Felix';
+        let i = 9;
+        // console.log(k instanceof Array)
+        let Hi = (`My name is ${j}, and ${i} years old.`)
+        document.write(Hi)
+    </script>
+
+    <script>
+        const myList = [, "home", , "school"];
+        console.log(myList[3])
+    </script> -->
+
+    <script>
+        let Lesson = [
+            { title: 'part 1:JavsScript intro', Lesson: 1 },
+            { title: 'part 2:JavsScript intro', Lesson: 2 },
+            { title: 'part 3:JavsScript intro', Lesson: 3 }
+        ];
+        function template() {
+            return `<ul>
+                ${Lesson.map(item => `<li>Subscription:"${item.title}"</li>`).join('')}
+                </ul>`
+        }
+        function links() {
+            String.map(item.map)
+        }
+        document.write(template());
+    </script>
+</body>
+</html>
